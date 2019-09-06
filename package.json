@@ -8,7 +8,12 @@
     "pug": "^2.0.4"
   },
   "scripts": {
+    "postinstall": "yarn css",
     "start": "parcel src/index.pug",
-    "build": "parcel build src/index.pug"
+    "build": "parcel build src/index.pug",
+    "css": "tailwind build src/static/tailwind.config.css -o src/static/tailwind.css"
+  },
+  "dependencies": {
+    "tailwindcss": "^1.1.2"
   }
 }
