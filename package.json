@@ -5,15 +5,12 @@
   "license": "MIT",
   "devDependencies": {
     "parcel-bundler": "^1.12.3",
-    "pug": "^2.0.4"
+    "pug": "^2.0.4",
+    "sass": "^1.22.12"
   },
   "scripts": {
-    "postinstall": "yarn css",
     "start": "parcel src/index.pug",
-    "build": "parcel build src/index.pug",
-    "css": "tailwind build src/static/tailwind.config.css -o src/static/tailwind.css"
+    "build": "parcel build src/index.pug"
   },
-  "dependencies": {
-    "tailwindcss": "^1.1.2"
-  }
+  "dependencies": {}
 }

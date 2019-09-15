@@ -1,56 +1,51 @@
 <!DOCTYPE html>
 html(lang="en")
     head
-        style
-            include static/tailwind.css
+        link(rel="stylesheet", href='static/style.scss')
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
         title Document
     body
-        div.flex.h-screen
-            div.flex(class="w-1/3 flex justify-center items-center")
-                img.rounded-full.shadow-md(src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbedagodJYw3g1TkAZKEHuwLUFKfsk20uLHLH8QsqJVBpp7YWU" alt="Logo")
-            div.flex-1.overflow-y-auto
-                div
-                    span.bg-blue-500.text-white.px-1.py-2.rounded NAME
-                    div Miku Sano
-                div
-                    div Name
-                    div Miku Sano
-                div
-                    div Name
-                    div Miku Sano    
-                div
-                    div Name
-                    div Miku Sano
-                div
-                    div Name
-                    div Miku Sano
-                div
-                    div Name
-                    div Miku Sano
-                div
-                    div Name
-                    div Miku Sano
-                div
-                    div Name
-                    div Miku Sano    
-                div
-                    div Name
-                    div Miku Sano
-                div
-                    div Name
-                    div Miku Sano
-                div
-                    div Name
-                    div Miku Sano    
-                div
-                    div Name
-                    div Miku Sano
-                div
-                    div Name
-                    div Miku Sano
-                div
-                    div Name
-                    div Miku Sano    
+        div.mainWrapper
+            div.main
+                div.left
+                    div.iconWrapper
+                        img.icon(src="static/omusubi-gift.png" alt="Logo")
+                    div.nameWrapper
+                        div.name Miku Sano
+                div.right
+                    div.content
+                        span.caption JOB
+                        div.text Server Side Engineer
+                    div.content
+                        span.caption AGE
+                        div.text 24 (21/02/1995)
+                    div.content
+                        span.caption SKILL
+                        div 
+                            span.subhead OS
+                            span.text Windows, Amazon Linux, CentOS, macOS
+                        div 
+                            span.subhead Language
+                            span.text Java, PHP, JavaScript, HTML, CSS
+                        div 
+                            span.subhead Framework/Library
+                            span.text Spring Boot, Phalcon, jQuery, Bootstrap, MyBatis
+                        div 
+                            span.subhead Middleware
+                            span.text Apache HTTP Server, MySQL, Redis
+                        div 
+                            span.subhead Other
+                            span.text Git, SVN, gRPC, Jenkins, Docker, Kubernetes 
+                    div.content
+                        span.caption HOBBY
+                        div.text   茶道(Green tea ceremony), Climbing, English conversation, Travel
+                    div.content
+                        span.caption CONTACT
+                        div
+                            span.subhead E-mail
+                            span.text hi@sano39.me
+                        div
+                            span.subhead GitHub
+                            a(href="https://github.com/Miku39" target="_blank") https://github.com/Miku39

@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css?family=M+PLUS+1p:400,800&display=swap&subset=japanese");
+@import url("https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap");
+
+$primaryColor: #f1c40f;
+//
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "M PLUS 1p", sans-serif;
+}
+.mainWrapper {
+  height: 100vh;
+  padding: 40px;
+  background-color: $primaryColor;
+  .main {
+    background-color: white;
+    display: flex;
+    height: 100%;
+  }
+}
+.left {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .iconWrapper {
+    margin-top: 40px;
+    .icon {
+      height: 300px;
+      width: 300px;
+      border-radius: 50%;
+      background-color: white;
+      box-shadow: 0 0 15px #dddddd;
+    }
+  }
+  .nameWrapper {
+    .name {
+      color: $primaryColor;
+      font-size: 40px;
+      font-weight: bold;
+    }
+  }
+}
+
+.right {
+  flex-grow: 2;
+  display: flex;
+  flex-direction: column;
+  padding: 30px 0px;
+  overflow-y: auto;
+}
+.content {
+  padding: 10px 0px;
+  .caption {
+    font-family: "Lexend Deca", sans-serif;
+    letter-spacing: 0.3px;
+    font-size: 14px;
+    display: inline-block;
+    background-color: $primaryColor;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 6px;
+    margin-bottom: 16px;
+  }
+  .subhead {
+    font-family: "Lexend Deca", sans-serif;
+    letter-spacing: 0.3px;
+    font-size: 18px;
+    padding-right: 12px;
+    border-radius: 6px;
+    margin-bottom: 16px;
+  }
+}
