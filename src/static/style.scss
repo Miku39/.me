@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap");
 
 $primaryColor: #f1c40f;
-//
+
 * {
   box-sizing: border-box;
 }
@@ -16,6 +16,7 @@ body {
 body {
   font-family: "M PLUS 1p", sans-serif;
 }
+
 .mainWrapper {
   height: 100vh;
   padding: 40px;
@@ -26,6 +27,7 @@ body {
     height: 100%;
   }
 }
+
 .left {
   flex-grow: 1;
   display: flex;
@@ -44,7 +46,6 @@ body {
   }
   .nameWrapper {
     .name {
-      color: $primaryColor;
       font-size: 40px;
       font-weight: bold;
     }
@@ -55,9 +56,10 @@ body {
   flex-grow: 2;
   display: flex;
   flex-direction: column;
-  padding: 30px 0px;
+  padding: 20px 0px;
   overflow-y: auto;
 }
+
 .content {
   padding: 10px 0px;
   .caption {
@@ -69,14 +71,17 @@ body {
     color: white;
     padding: 6px 12px;
     border-radius: 6px;
-    margin-bottom: 16px;
+    margin-bottom: 8px;
   }
-  .subhead {
-    font-family: "Lexend Deca", sans-serif;
-    letter-spacing: 0.3px;
-    font-size: 18px;
-    padding-right: 12px;
-    border-radius: 6px;
-    margin-bottom: 16px;
+  .row {
+    margin-top: 2px;
+    .subhead {
+      font-family: "Lexend Deca", sans-serif;
+      letter-spacing: 0.3px;
+      font-size: 18px;
+      padding-right: 12px;
+      border-radius: 6px;
+      margin-bottom: 16px;
+    }
   }
 }
