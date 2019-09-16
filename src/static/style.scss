@@ -3,6 +3,14 @@
 
 $primaryColor: #f1c40f;
 
+$widthSp: 480px; //スマートフォン
+
+@mixin sp {
+  @media (max-width: ($widthSp)) {
+    @content;
+  }
+}
+
 * {
   box-sizing: border-box;
 }
@@ -20,11 +28,17 @@ body {
 .mainWrapper {
   height: 100vh;
   padding: 40px;
+  @include sp {
+    padding: 10px;
+  }
   background-color: $primaryColor;
   .main {
     background-color: white;
     display: flex;
     height: 100%;
+    @include sp {
+      flex-direction: column;
+    }
   }
 }
 
@@ -36,18 +50,28 @@ body {
   align-items: center;
   .iconWrapper {
     margin-top: 40px;
+    @include sp {
+      margin-top: 20px;
+    }
     .icon {
       height: 300px;
       width: 300px;
       border-radius: 50%;
       background-color: white;
       box-shadow: 0 0 15px #dddddd;
+      @include sp {
+        height: 100px;
+        width: 100px;
+      }
     }
   }
   .nameWrapper {
     .name {
       font-size: 35px;
       font-weight: bold;
+      @include sp {
+        font-size: 25px;
+      }
     }
   }
 }
@@ -62,6 +86,9 @@ body {
 
 .content {
   padding: 10px 0px;
+  @include sp {
+    margin-left: 10px;
+  }
   .caption {
     font-family: "Lexend Deca", sans-serif;
     letter-spacing: 0.3px;
